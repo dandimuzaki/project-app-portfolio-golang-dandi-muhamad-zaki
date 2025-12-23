@@ -1,0 +1,66 @@
+2025-12-22T11:13:30.230+0700	ERROR	repository/project.go:58	Error query get all projects: 	{"error": "expected 0 arguments, got 2"}
+2025-12-22T11:13:30.232+0700	ERROR	service/project.go:36	Error get all projects service: 	{"error": "expected 0 arguments, got 2"}
+2025-12-22T11:13:30.232+0700	ERROR	handler/project.go:40	Error handling get all projects: 	{"error": "expected 0 arguments, got 2"}
+2025-12-22T11:13:30.233+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: footer.html:4:17: executing \"footer\" at <.Year>: can't evaluate field Year in type handler.display"}
+2025-12-22T11:17:38.898+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: footer.html:4:17: executing \"footer\" at <.Year>: can't evaluate field Year in type handler.display"}
+2025-12-22T12:10:55.617+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "user not found"}
+2025-12-22T12:15:54.155+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "user not found"}
+2025-12-22T12:21:20.267+0700	ERROR	service/auth.go:35	Error find user by email: 	{"error": "ERROR: syntax error at or near \"FROM\" (SQLSTATE 42601)"}
+2025-12-22T12:21:20.273+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "can't find email"}
+2025-12-22T12:21:30.437+0700	ERROR	service/auth.go:35	Error find user by email: 	{"error": "ERROR: syntax error at or near \"FROM\" (SQLSTATE 42601)"}
+2025-12-22T12:21:30.437+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "can't find email"}
+2025-12-22T12:27:05.322+0700	ERROR	service/auth.go:42	Incorrect password: 
+2025-12-22T12:27:05.327+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "incorrect password"}
+2025-12-22T12:50:26.085+0700	ERROR	service/auth.go:42	Incorrect password: 
+2025-12-22T12:50:26.150+0700	ERROR	handler/auth.go:94	Error handling login user: 	{"error": "incorrect password"}
+2025-12-22T13:05:45.391+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:22: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:21.691+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:23.993+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:24.675+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:27.456+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:37.033+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:06:37.686+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:11:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:08:34.003+0700	ERROR	handler/project.go:53	Error executing home template: 	{"error": "template: header.html:17:19: executing \"header\" at <.User.Name>: nil pointer evaluating interface {}.Name"}
+2025-12-22T13:17:36.381+0700	ERROR	middleware/auth.go:25	Error convert cookie value: 	{"error": "strconv.Atoi: parsing \"user-1\": invalid syntax"}
+2025-12-22T13:17:36.460+0700	ERROR	repository/user.go:80	Error query get user by id: 	{"error": "ERROR: column \"description\" does not exist (SQLSTATE 42703)"}
+2025-12-22T13:22:10.029+0700	ERROR	repository/user.go:80	Error query get user by id: 	{"error": "can't scan into dest[3] (col: avatar): cannot scan NULL into *string"}
+2025-12-22T13:22:10.076+0700	ERROR	repository/project.go:64	Error query get all projects: 	{"error": "ERROR: column reference \"description\" is ambiguous (SQLSTATE 42702)"}
+2025-12-22T13:22:10.078+0700	ERROR	service/project.go:36	Error get all projects service: 	{"error": "ERROR: column reference \"description\" is ambiguous (SQLSTATE 42702)"}
+2025-12-22T13:22:10.078+0700	ERROR	handler/project.go:40	Error handling get all projects: 	{"error": "ERROR: column reference \"description\" is ambiguous (SQLSTATE 42702)"}
+2025-12-22T13:24:08.985+0700	ERROR	repository/user.go:80	Error query get user by id: 	{"error": "can't scan into dest[3] (col: avatar): cannot scan NULL into *string"}
+2025-12-22T13:24:17.653+0700	ERROR	repository/user.go:80	Error query get user by id: 	{"error": "can't scan into dest[3] (col: avatar): cannot scan NULL into *string"}
+2025-12-22T13:34:29.129+0700	ERROR	service/auth.go:52	Cannot register existing user: 
+2025-12-22T13:34:57.181+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T13:34:57.193+0700	ERROR	service/auth.go:52	Cannot register existing user: 
+2025-12-22T13:35:37.544+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T13:35:37.544+0700	ERROR	service/auth.go:52	Cannot register existing user: 
+2025-12-22T14:35:31.472+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:31.976+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:35.899+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:53.830+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:53.897+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T14:35:53.927+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:53.935+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T14:35:53.947+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:35:53.949+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T14:41:56.730+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:42:04.758+0700	ERROR	middleware/auth.go:18	Error retrieve cookie: 	{"error": "http: named cookie not present"}
+2025-12-22T14:42:04.801+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T14:46:33.950+0700	ERROR	repository/user.go:57	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-22T19:23:20.692+0700	ERROR	handler/project.go:71	Error executing my-portfolio template: 	{"error": "html/template: \"my-portfolio\" is undefined"}
+2025-12-22T21:00:32.481+0700	ERROR	handler/project.go:153	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T21:00:38.959+0700	ERROR	handler/project.go:221	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T21:05:24.020+0700	ERROR	handler/project.go:153	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T21:07:00.021+0700	ERROR	handler/project.go:153	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T21:08:48.448+0700	ERROR	handler/project.go:163	Error executing portfolio-edit template: 	{"error": "html/template: \"portfolio-edit\" is undefined"}
+2025-12-22T21:08:51.678+0700	ERROR	handler/project.go:231	Error executing portfolio-delete template: 	{"error": "html/template: \"portfolio-delete\" is undefined"}
+2025-12-22T21:08:59.085+0700	ERROR	handler/project.go:163	Error executing portfolio-edit template: 	{"error": "html/template: \"portfolio-edit\" is undefined"}
+2025-12-22T21:09:03.246+0700	ERROR	handler/project.go:102	Error executing portfolio-create template: 	{"error": "html/template: \"portfolio-create\" is undefined"}
+2025-12-22T21:29:01.326+0700	ERROR	handler/project.go:163	Error executing portfolio-edit template: 	{"error": "html/template: \"portfolio-edit\" is undefined"}
+2025-12-22T22:01:29.024+0700	ERROR	repository/project.go:146	Error query create project: 	{"error": "can't scan into dest[0] (col: id): cannot scan int4 (OID 23) in binary format into int"}
+2025-12-22T22:01:29.031+0700	ERROR	service/project.go:82	Error create project service: 	{"error": "can't scan into dest[0] (col: id): cannot scan int4 (OID 23) in binary format into int"}
+2025-12-22T22:01:29.031+0700	ERROR	handler/project.go:136	Error handling create project: 	{"error": "can't scan into dest[0] (col: id): cannot scan int4 (OID 23) in binary format into int"}
+2025-12-22T22:40:42.716+0700	ERROR	handler/project.go:193	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T22:41:57.817+0700	ERROR	handler/project.go:193	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-22T22:43:15.364+0700	ERROR	handler/project.go:244	Error executing portfolio-delete template: 	{"error": "template: portfolio-delete.html:9:60: executing \"portfolio-delete\" at <.ID>: can't evaluate field ID in type handler.display"}
+2025-12-22T23:21:58.753+0700	ERROR	handler/project.go:303	Error executing explore-details template: 	{"error": "html/template: \"explore-details\" is undefined"}

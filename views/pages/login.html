@@ -1,0 +1,26 @@
+{{ define "login" }}
+  {{ template "head" . }}
+  {{ template "header-logo" . }}
+    <section class="backdrop">
+      <div class="auth">
+        <h2>Login</h2>
+        <p class="description">Access your portfolio and manage your projects.</p>
+        <form action="/login" method="POST" id="login">
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="user@example.com" required/>
+          </div>
+          <div class="input-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="••••••••" required minlength=8 />
+          </div>
+          {{ if .Error }}
+          <p class="error">{{ .Error }}</p>
+          {{ end }}
+          <button class="primary" type="submit">Login</button>
+        </form>
+        <p class="login-footer">Don't have an account? <a style="color: var(--secondary-dark);" href="/register">Register here</a> to get started.</p>
+      </div>
+    </section>
+  {{ template "tail" . }}
+{{ end }}

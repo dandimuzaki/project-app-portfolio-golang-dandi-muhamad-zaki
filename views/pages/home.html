@@ -1,0 +1,21 @@
+{{ define "home" }}
+  {{ template "head" . }}
+    {{ template "header" . }}
+      <section class="hero">
+        <div class="hero-img"></div>
+        <div class="hero-content">
+        <div class="hero-text">
+          <div class="badge">Place to showcase your portfolio projects</div>
+          <h1>Get <span class="pink">Inspired</span>. Be <span class="pink">Inspiring</span>.<br/>Share Your <span class="purple">Inspiration</span></h1>
+        </div>
+        <div class="grid-container-3">
+          {{ range .Data }}
+            {{ template "project-card" . }}
+          {{ end }}
+        </div>
+        </div>
+      </section>
+      <script src="/public/assets/script/script.js"></script>
+  {{ template "footer" . }}
+  {{ template "tail" . }}
+{{ end }}

@@ -1,0 +1,56 @@
+2025-12-23T05:33:12.871+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:9:12: executing \"explore-details\" at <.Description>: can't evaluate field Description in type handler.display"}
+2025-12-23T05:34:46.650+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:9:12: executing \"explore-details\" at <.Description>: can't evaluate field Description in type handler.display"}
+2025-12-23T05:36:45.968+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:14:19: executing \"explore-details\" at <len .Data.TechStack>: error calling len: len of nil pointer"}
+2025-12-23T05:36:58.791+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:14:19: executing \"explore-details\" at <len .Data.TechStack>: error calling len: len of nil pointer"}
+2025-12-23T05:37:40.464+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:14:19: executing \"explore-details\" at <len .Data.TechStack>: error calling len: len of nil pointer"}
+2025-12-23T05:38:54.509+0700	ERROR	handler/project.go:294	Error executing explore-details template: 	{"error": "template: explore-details.html:14:19: executing \"explore-details\" at <len .Data.TechStack>: error calling len: len of nil pointer"}
+2025-12-23T05:52:06.128+0700	ERROR	repository/project.go:146	Error query create project: 	{"error": "ERROR: INSERT has more expressions than target columns (SQLSTATE 42601)"}
+2025-12-23T05:52:06.150+0700	ERROR	service/project.go:82	Error create project service: 	{"error": "ERROR: INSERT has more expressions than target columns (SQLSTATE 42601)"}
+2025-12-23T05:52:06.151+0700	ERROR	handler/project.go:136	Error handling create project: 	{"error": "ERROR: INSERT has more expressions than target columns (SQLSTATE 42601)"}
+2025-12-23T11:30:06.094+0700	ERROR	handler/project.go:216	Error retrieving image file: 	{"error": "request Content-Type isn't multipart/form-data"}
+2025-12-23T11:32:49.216+0700	ERROR	handler/project.go:218	Error retrieving image file: 	{"error": "request Content-Type isn't multipart/form-data"}
+2025-12-23T11:34:44.650+0700	ERROR	handler/project.go:219	Error retrieving image file: 	{"error": "request Content-Type isn't multipart/form-data"}
+2025-12-23T11:50:27.634+0700	ERROR	handler/project.go:219	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T11:51:37.284+0700	ERROR	handler/project.go:219	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T11:57:56.952+0700	ERROR	handler/project.go:225	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T12:06:38.169+0700	ERROR	service/project.go:133	Error create image filepath: 	{"error": "open : The system cannot find the file specified."}
+2025-12-23T12:06:38.179+0700	ERROR	handler/project.go:240	Error handling update project: 	{"error": "open : The system cannot find the file specified."}
+2025-12-23T12:06:38.201+0700	ERROR	handler/project.go:162	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-23T15:16:03.930+0700	ERROR	handler/project.go:162	Error converting project id to int: 	{"error": "strconv.Atoi: parsing \"\": invalid syntax"}
+2025-12-23T15:19:21.621+0700	ERROR	handler/profile.go:132	Error retrieving CV file: 	{"error": "http: no such file"}
+2025-12-23T15:25:38.145+0700	ERROR	handler/profile.go:117	Error retrieving avatar file: 	{"error": "http: no such file"}
+2025-12-23T15:34:23.840+0700	ERROR	handler/profile.go:123	Error retrieving avatar file: 	{"error": "http: no such file"}
+2025-12-23T15:41:58.521+0700	ERROR	repository/user.go:58	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-23T15:42:24.181+0700	ERROR	repository/user.go:58	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-23T15:42:24.191+0700	ERROR	repository/user.go:58	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-23T15:42:24.201+0700	ERROR	repository/user.go:58	User not found on given email: 	{"error": "no rows in result set"}
+2025-12-23T15:48:03.902+0700	ERROR	handler/profile.go:123	Error retrieving avatar file: 	{"error": "http: no such file"}
+2025-12-23T15:49:34.255+0700	ERROR	handler/project.go:228	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T15:52:28.974+0700	ERROR	handler/project.go:230	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T15:55:28.521+0700	ERROR	handler/project.go:230	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T15:56:27.970+0700	ERROR	handler/project.go:231	Error retrieving image file: 	{"error": "http: no such file"}
+2025-12-23T16:48:38.889+0700	ERROR	handler/project.go:188	Error executing portfolio-edit template: 	{"error": "template: portfolio-edit.html:24:105: executing \"portfolio-edit\" at <.Data.Name>: can't evaluate field Name in type interface {}"}
+2025-12-23T16:49:21.311+0700	ERROR	handler/project.go:188	Error executing portfolio-edit template: 	{"error": "template: portfolio-edit.html:24:105: executing \"portfolio-edit\" at <.Data.Name>: can't evaluate field Name in type interface {}"}
+2025-12-23T16:49:28.430+0700	ERROR	handler/project.go:188	Error executing portfolio-edit template: 	{"error": "template: portfolio-edit.html:24:105: executing \"portfolio-edit\" at <.Data.Name>: can't evaluate field Name in type interface {}"}
+2025-12-23T17:18:13.187+0700	ERROR	handler/project.go:73	Error executing my-portfolio template: 	{"error": "template: my-portfolio.html:14:42: executing \"my-portfolio\" at <.Data.Github>: can't evaluate field Github in type interface {}"}
+2025-12-23T17:27:29.123+0700	ERROR	handler/project.go:105	Error executing portfolio-create template: 	{"error": "html/template:portfolio-create: \"<\" in attribute name: \"\\r\\n          <input type=\\\"hidden\\\"\""}
+2025-12-23T17:52:57.760+0700	ERROR	handler/project.go:52	Error executing home template: 	{"error": "template: header.html:9:66: executing \"header\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:00:28.946+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:23:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:02:28.213+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:23:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:02:30.795+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:23:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:04:58.157+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:23:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:03.696+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:17: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:06.567+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:17: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:28.700+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:31.951+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:56.360+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:06:57.746+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:07:21.459+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:16: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:07:22.996+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:16: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:07:23.564+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:16: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:08:20.443+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:16: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T18:08:22.400+0700	ERROR	handler/project.go:342	Error executing explore-details template: 	{"error": "template: explore-details.html:22:16: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T21:21:16.906+0700	ERROR	handler/project.go:60	Error executing home template: 	{"error": "template: header.html:12:22: executing \"header\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T21:24:40.427+0700	ERROR	handler/project.go:348	Error executing explore-details template: 	{"error": "template: explore-details.html:22:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T21:28:36.364+0700	ERROR	handler/project.go:348	Error executing explore-details template: 	{"error": "template: explore-details.html:23:20: executing \"explore-details\" at <.User.ID>: nil pointer evaluating interface {}.ID"}
+2025-12-23T21:32:43.462+0700	ERROR	handler/profile.go:64	Error executing profile template: 	{"error": "template: profile.html:23:38: executing \"profile\" at <.User.ID>: nil pointer evaluating interface {}.ID"}

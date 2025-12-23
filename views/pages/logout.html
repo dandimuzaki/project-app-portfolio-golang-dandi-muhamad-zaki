@@ -1,0 +1,17 @@
+{{ define "logout" }}
+  {{ template "head" . }}
+  {{ template "header-logo" . }}
+    <section class="backdrop">
+      <div class="auth logout">
+        <h2>Logout Confirmation</h2>
+        <p>Are you sure you want to leave?</p>
+        <form action="/logout" method="POST" id="logout">
+          <div class="btn-container">
+          <a class="cancel accent" href="/home">Cancel</a>
+          <button class="primary" type="submit">Logout</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  {{ template "tail" . }}
+{{ end }}

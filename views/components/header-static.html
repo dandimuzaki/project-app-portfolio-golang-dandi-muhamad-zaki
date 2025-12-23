@@ -1,0 +1,21 @@
+{{ define "header-static" }}
+  <header class="scrolled">
+    <div class="logo-container">
+      <a style="height: 100%; width: 100%;" href="/home">
+      <img src="/public/assets/images/logo.png"/>
+      </a>
+    </div>
+    <div>
+      <ul class="nav-list">
+        <li class="nav-link"><a class="" href="/home">Home</a></li>
+        <li class="nav-link"><a class="" href="/portfolio">My Portfolio</a></li>
+        {{ if .User }}
+        <li class="nav-link"><a class="" href="/logout">Logout</a></li>
+        {{ else }}
+        <a class="cancel outline" href="/login">Login</a>
+        <a class="cancel primary" href="/register">Register</a>
+        {{ end }}
+      </ul>
+    </div>
+  </header>
+{{ end }}

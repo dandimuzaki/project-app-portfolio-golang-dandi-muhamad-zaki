@@ -1,0 +1,54 @@
+{{ define "profile-edit" }}
+  {{ template "head" . }}
+  {{ template "header-logo" . }}
+    <section class="form-drop">
+      <div class="auth logout">
+        <h2>Edit Profile</h2>
+        <form class="form" action="/profile/edit" method="POST" enctype="multipart/form-data">
+          {{ if .Data.Avatar }}          
+          <p style="text-align: center;">Current Avatar</p>
+          <div class="img-preview">
+            <img style="width: 100%; height: 100%; object-fit: cover;" src="{{.Data.Avatar}}" alt="{{.Data.Name}}" />
+          </div>
+          {{ end }}
+          <div class="input-field">
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*"/>
+          </div>
+          <div class="input-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" value="{{.Data.Name}}" required/>
+          </div>
+          <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" value="{{.Data.Email}}" required/>
+          </div>
+          <div class="input-field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="08XXXXXXXXXX" value="{{.Data.PhoneNumber}}"/>
+          </div>
+          <div class="input-field">
+            <label for="description">Description</label>
+            <textarea rows="5" cols="100" id="description" name="description" placeholder="Enter your description">{{.Data.Description}}</textarea>
+          </div>
+          <div class="input-field">
+            <label for="github">Github Link</label>
+            <input type="url" id="github" name="github" placeholder="https://your-github-link" value="{{.Data.Github}}"/>
+          </div>
+          <div class="input-field">
+            <label for="linkedin">LinkedIn Link</label>
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://your-linkedin-link" value="{{.Data.LinkedIn}}"/>
+          </div>
+          <div class="input-field">
+            <label for="cv">CV</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.rar,.doc, .zip"/>
+          </div>
+          <div class="btn-container">
+            <a class="cancel accent" href="/profile">Cancel</a>
+            <button class="primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  {{ template "tail" . }}
+{{ end }}

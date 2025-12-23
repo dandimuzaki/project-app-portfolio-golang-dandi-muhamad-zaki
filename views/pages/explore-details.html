@@ -1,0 +1,56 @@
+{{ define "explore-details" }}
+  {{ template "head" . }}
+  {{ template "header-static" . }}
+    <section class="profile">
+      <h2>{{ .Data.Title }}</h2>
+      <div class="detail-img">
+        {{ if .Data.Image }}
+          <img style="width: 100%; height: 100%; object-fit: cover;" src="{{.Data.Image}}" alt="{{.Data.Title}}"/>
+        {{ end }}
+      </div>
+      {{ if .Data.Description }}
+      <p class="detail-description">{{ .Data.Description }}</p>
+      {{ end }}
+      {{if .Data.TechStack }}
+        <div class="Tags">
+          <span>Tech Stack: </span>
+          {{ range .Data.TechStack }}
+            <span class="Tech">{{ . }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ if .User }}
+      {{ if eq .User.ID .Data.UserID }}
+      <div class="btn-container">
+        <a class="cancel primary flex" type="submit" href="{{.Data.URL}}">Visit Project</a>
+        <form class="flex" action="/portfolio/edit" method="GET" style="margin: 0;">
+          <input type="hidden" name="id" value="{{.Data.ID}}">
+          <button class="secondary flex" type="submit">Edit</button>
+        </form>
+        <form class="flex" action="/portfolio/delete" method="GET" style="margin: 0;">
+          <input type="hidden" name="id" value="{{.Data.ID}}">
+          <button class="accent flex" type="submit">Delete</button>
+        </form>
+      </div>
+      {{ else }}
+      <div class="btn-container">
+        <a class="cancel primary flex" type="submit" href="{{.Data.URL}}">Visit Project</a>
+        <form class="flex" action="/explore" method="GET" style="margin: 0;">
+          <input type="hidden" name="id" value="{{.Data.UserID}}">
+          <button class="secondary flex" type="submit">View Profile</button>
+        </form>
+      </div>
+      {{ end }}
+      {{ else }}
+      <div class="btn-container">
+        <a class="cancel primary flex" type="submit" href="{{.Data.URL}}">Visit Project</a>
+        <form class="flex" action="/explore" method="GET" style="margin: 0;">
+          <input type="hidden" name="id" value="{{.Data.UserID}}">
+          <button class="secondary flex" type="submit">View Profile</button>
+        </form>
+      </div>
+      {{ end }}
+    </section>
+  {{ template "footer" . }}
+  {{ template "tail" . }}
+{{ end }}

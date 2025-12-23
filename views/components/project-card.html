@@ -1,0 +1,27 @@
+{{ define "project-card" }}
+  <div class="card">
+    <a class="overlay" href="/">
+      View Details
+    </a>
+    <form class="overlay" action="/explore/details" method="GET" style="margin: 0;">
+      <input type="hidden" name="id" value="{{.ID}}">
+      <button class="overlay" type="submit">View Details</button>
+    </form>
+    <div class="card-content">
+      <div class="card-text">
+        <div class="card-img">
+          <img style="width: 100%; height: 100%; object-fit: cover;" src="{{.Image}}" alt="{{.Title}}" />
+        </div>
+        <h3>{{ .Title }}</h3>
+        {{ if .TechStack }}
+          <div class="tags">
+            {{ range .TechStack }}
+              <span class="tech">{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      <p>Created by <span style="font-weight: bold; color: var(--secondary);">{{ .Owner }}</span> </p>
+    </div>
+  </div>
+{{ end }}

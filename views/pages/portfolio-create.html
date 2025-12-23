@@ -1,0 +1,40 @@
+{{ define "portfolio-create" }}
+  {{ template "head" . }}
+  {{ template "header-logo" . }}
+    <section class="form-drop">
+      <div class="auth logout">
+        <h2>Create Project</h2>
+        <form class="form" action="/portfolio/create" method="POST" id="create" enctype="multipart/form-data">
+          <input type="hidden" name="user_id" value="{{.User.ID}}"/>
+          <div class="input-field">
+            <label for="title">Title</label>
+            <p class="example">Example: Inventory App with Golang CLI</p>
+            <input type="text" id="title" name="title" placeholder="Your project title" required/>
+          </div>
+          <div class="input-field">
+            <label for="description">Description</label>
+            <textarea rows="5" cols="100" id="description" name="description" placeholder="Your project description"></textarea>
+          </div>
+          <div class="input-field">
+            <label for="url">Link URL</label>
+            <input type="text" id="url" name="url" placeholder="https://your-project-link-url"/>
+          </div>
+          <div class="input-field">
+            <label for="image">Image</label>
+            <input type="file" id="image" name="image" accept="image/*"/>
+          </div>
+          <div class="input-field">
+            <label for="tech_stack">Tech Stack</label>
+            <p class="example">Example: Golang, Django, Laravel</p>
+            <input type="text" id="tech_stack" name="tech_stack"/>
+          </div>
+          <div class="btn-container">
+            <a class="cancel accent" href="/portfolio">Cancel</a>
+            <button class="primary" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  {{ template "footer" . }}
+  {{ template "tail" . }}
+{{ end }}

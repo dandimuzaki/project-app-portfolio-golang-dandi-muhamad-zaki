@@ -1,0 +1,42 @@
+{{ define "profile" }}
+  {{ template "head" . }}
+  {{ template "header-static" . }}
+    <section class="profile">
+      <div class="profile-container">
+        <div class="profile-img">
+          {{ if .Data.User.Avatar }}
+            <img style="height: 100%; object-fit: cover; width: 100%;" src="{{.Data.User.Avatar}}" alt="{{.Data.User.Name}}"/>
+          {{ end }}
+        </div>
+        <div class="profile-content">
+          <h2 style="color: var(--primary);">{{ .Data.User.Name }}</h2>
+          <div class="profile-btn" style="margin: 0;">
+            <a class="flex"  href="{{.Data.User.Github}}" style="background-color: 	#24292e; color: white;">Visit Github</a>
+            <a class="flex" href="{{.Data.User.LinkedIn}}" style="background-color: #0077B5; color: white;">Visit LinkedIn</a>
+            <a class="flex accent" href="{{.Data.User.CV}}">Download CV</a>
+          </div>
+          <div style="color: black; font-size: 18px;">
+            <p>Email : <span style="color: var(--primary-dark);">{{ .Data.User.Email }}</span></p>
+            <p>Phone Number : <span style="color: var(--primary-dark);">{{.Data.User.PhoneNumber}}</span></p>
+          </div>
+          <p style="color: black; text-align: justify;">{{ .Data.User.Description }}</p>
+          {{ if .User }}
+          {{ if eq .Data.User.ID .User.ID }}
+          <div class="profile-btn">
+            <a class="primary flex" href="/portfolio/create">Add Project</a>
+            <a class="secondary flex" href="/profile/edit">Edit Profile</a>
+          </div>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <h2>Recent Projects</h2>
+      <div class="grid-container-3">
+        {{ range .Data.Data }}
+          {{ template "personal-card" . }}
+        {{ end }}
+      </div>
+    </section>
+  {{ template "footer" . }}
+  {{ template "tail" . }}
+{{ end }}
